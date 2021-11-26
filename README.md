@@ -7,7 +7,7 @@
 </h1>
 
 <h3 align="center">
- Sou <strong>Desenvolvedor Front-End iniciante</strong>
+ Sou <strong>Desenvolvedor Front-End</strong>
 </h3>
 
 <p align="center">

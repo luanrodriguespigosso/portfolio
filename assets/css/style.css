@@ -1,0 +1,101 @@
+/* @font-face INICIO */
+@font-face {
+    font-family: "Bariol-Light";
+    src: local("Bariol Light"), local("Bariol-Light"), url("../fonts/bariol_light.ttf") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bariol-Regular";
+    src: local("Bariol Regular"), local("Bariol-Regular"), url("../fonts/bariol_regular.ttf") format("woff2");
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Bariol-Bold";
+    src: local("Bariol Bold"), local("Bariol-Bold"), url("../fonts/bariol_bold.ttf") format("woff2");
+    font-weight: 700;
+    font-display: swap;
+}
+/* @font-face FIM */
+
+/* Variaveis SCSS INICIO */
+
+:root {
+    --background-black: #131219;
+    --background-semi--black: #17161D;
+    --content-text: #737380;
+    --text: #FFFFFF;
+    --green: #00DD80;
+}
+/* Variaveis SCSS FIM */
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Bariol-Light";
+    -webkit-user-select: none;
+        -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+}
+
+*,
+::before,
+::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+body {
+    font-family: "Bariol-light";
+    background-color: #131219;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+::-webkit-scrollbar {
+    font-size: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #131219;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00dd80;
+    border-radius: 8px;
+}
