@@ -1,4 +1,4 @@
-/* @font-face INICIO */
+/* @font-face START */
 @font-face {
     font-family: "Bariol-Light";
     src: local("Bariol Light"), local("Bariol-Light"), url("../fonts/bariol_light.ttf") format("woff2");
@@ -20,9 +20,9 @@
     font-weight: 700;
     font-display: swap;
 }
-/* @font-face FIM */
+/* @font-face END */
 
-/* Variaveis SCSS INICIO */
+/* Variaveis SCSS START */
 
 :root {
     --background-black: #131219;
@@ -31,8 +31,9 @@
     --text: #FFFFFF;
     --green: #00DD80;
 }
-/* Variaveis SCSS FIM */
+/* Variaveis SCSS END */
 
+/* Reset CSS START */
 * {
     padding: 0;
     margin: 0;
@@ -59,6 +60,7 @@ li {
 
 a {
     text-decoration: none;
+    color: var(--text);
 }
 
 img {
@@ -84,7 +86,7 @@ body {
 
 html {
     scroll-behavior: smooth;
-    font-size: 62.5%;
+    font-size: 1rem;
 }
 
 ::-webkit-scrollbar {
@@ -99,3 +101,59 @@ html {
     background-color: #00dd80;
     border-radius: 8px;
 }
+
+/* Reset CSS END */
+
+/*  */
+
+.container-fluid {
+    padding-right:15px;
+    padding-left:15px;
+    margin-right:auto;
+    margin-left:auto
+}
+
+.container {
+    width: 1140px;
+    max-width: 100% !important;
+}
+
+/*  */
+
+/* header START */
+
+#header {
+    display: flex;
+    justify-content: center;
+    background: var(--background-black);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 1rem;
+    height: 75px;
+}
+
+#menu {
+    display: flex;
+    gap: .5rem;
+}
+
+#menu a {
+    display: block;
+    padding: .5rem;
+}
+
+a:hover {
+    background-color: rgba(255, 0, 0, 0.25);
+}
+
+#logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+/* header END */
