@@ -148,10 +148,6 @@ html {
     padding: .5rem;
 }
 
-a:hover {
-    background-color: rgba(255, 0, 0, 0.25);
-}
-
 #logo {
     font-size: 1.5rem;
     font-weight: bold;
@@ -166,6 +162,9 @@ a:hover {
 /* media query START */
 @media (max-width: 1200px ) {}
 @media (max-width: 992px ) {
+    ::-webkit-scrollbar, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
+        display: none;
+    }
     /* menu mobile START */
     #menu {
         display: block;
@@ -174,6 +173,8 @@ a:hover {
         top: 75px;
         right: 0px;
         height: 0px;
+        background: var(--background-black);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
         transition: .6s;
         z-index: 1000;
         visibility: hidden;
@@ -185,9 +186,12 @@ a:hover {
         overflow-y: auto;
     }
     #menu a {
+        font-family: Bariol-Bold;
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        color: var(--green);
+        text-align: center;
         padding: 1rem 0;
-        margin: 0 1rem;
-        border-bottom: 2px solid rgba(0, 87, 50, .09);
     }
     #btn-mobile {
         display: flex;
