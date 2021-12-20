@@ -145,7 +145,17 @@ html {
 
 #menu a {
     display: block;
-    padding: .5rem;
+    font-family: Bariol-Regular;
+    color: var(--green);
+    padding: 25px .5rem;
+}
+
+#menu a {
+    border-bottom: 2px solid transparent;
+}
+
+#menu a:hover {
+    border-bottom: 2px solid var(--green);
 }
 
 #logo {
@@ -165,6 +175,7 @@ html {
     ::-webkit-scrollbar, ::-webkit-scrollbar-thumb, ::-webkit-scrollbar-track {
         display: none;
     }
+
     /* menu mobile START */
     #menu {
         display: block;
@@ -180,19 +191,26 @@ html {
         visibility: hidden;
         overflow-y: hidden;
     }
+
     #nav.active #menu {
         height: calc(100vh - 75px);
         visibility: visible;
         overflow-y: auto;
     }
+
+    #menu a, #menu a:hover {
+        border-bottom: none;
+    }
+
     #menu a {
-        font-family: Bariol-Bold;
+        font-family: Bariol-Regular;
         font-size: 1.5rem;
         letter-spacing: 1px;
         color: var(--green);
         text-align: center;
         padding: 1rem 0;
     }
+
     #btn-mobile {
         display: flex;
         padding: .5rem 1rem;
@@ -202,12 +220,14 @@ html {
         cursor: pointer;
         gap: .5rem;
     }
+
     #hamburguer {
         display: block;
         width: 20px;
         color: var(--green);
         border-top: 2px solid;
     }
+
     #hamburguer::after, #hamburguer::before {
         display: block;
         width: 20px;
@@ -218,12 +238,15 @@ html {
         transition: .3s;
         position: relative;
     }
+
     #nav.active #hamburguer {
         border-top-color: transparent;
     }
+
     #nav.active #hamburguer::before {
         transform: rotate(135deg);
     }
+
     #nav.active #hamburguer::after {
         transform: rotate(-135deg);
         top: -7px;
