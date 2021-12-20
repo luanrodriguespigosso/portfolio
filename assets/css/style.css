@@ -135,7 +135,7 @@ html {
     align-items: center;
     box-sizing: border-box;
     padding: 1rem;
-    height: 75px;
+    height: 80px;
 }
 
 #menu {
@@ -147,7 +147,7 @@ html {
     display: block;
     font-family: Bariol-Regular;
     color: var(--green);
-    padding: 25px .5rem;
+    padding: 28px .5rem;
 }
 
 #menu a {
@@ -161,6 +161,22 @@ html {
 #logo {
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.header-icons {
+    display: flex;
+    height: 80px;
+    align-items: center;
+}
+
+.fa-github, .fa-linkedin {
+    color: var(--text);
+    font-size: 40px;
+    padding: .5rem .7rem;
+}
+
+.fa-github:hover, .fa-linkedin:hover {
+    color: var(--green);
 }
 /* header END */
 /* menu mobile START */
@@ -181,7 +197,7 @@ html {
         display: block;
         position: absolute;
         width: 100%;
-        top: 75px;
+        top: 80px;
         right: 0px;
         height: 0px;
         background: var(--background-black);
@@ -193,7 +209,7 @@ html {
     }
 
     #nav.active #menu {
-        height: calc(100vh - 75px);
+        height: calc(100vh - 80px);
         visibility: visible;
         overflow-y: auto;
     }
@@ -252,6 +268,10 @@ html {
         top: -7px;
     }
     /* menu mobile END */
+
+    .header-icons {
+        display: none;
+    }
 }
 @media (max-width: 768px ) {}
 @media (max-width: 576px ) {}
