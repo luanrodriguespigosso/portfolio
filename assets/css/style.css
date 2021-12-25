@@ -152,28 +152,14 @@ html {
     font-size: 1.5rem;
     font-weight: bold;
 }
-
-.header-icons {
-    display: flex;
-    height: 80px;
-    align-items: center;
-}
-
-.fa-github, .fa-linkedin {
-    color: var(--text);
-    font-size: 40px;
-    padding: .5rem .7rem;
-}
-
-.fa-github:hover, .fa-linkedin:hover {
-    color: var(--green);
-}
 /* header END */
+
 /* menu mobile START */
     #btn-mobile {
         display: none;
     }
 /* menu mobile END */
+
 /* Home START */
 #home {
     width: 100%;
@@ -212,6 +198,23 @@ html {
     font-family: Bariol-Regular;
     font-size: 1.5rem;
     font-weight: 500;
+    color: var(--green);
+}
+
+.icons-home {
+    display: flex;
+    align-items: center;
+}
+
+.fa-github, .fa-linkedin {
+    color: var(--text);
+    font-size: 40px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+}
+
+.fa-github:hover, .fa-linkedin:hover {
     color: var(--green);
 }
 
@@ -310,15 +313,17 @@ html {
         transform: rotate(-135deg);
         top: -7px;
     }
-    
-    .header-icons {
-        display: none;
-    }
     /* menu mobile END */
     
     /* Home START */
     .title-home {
         text-align: center;
+    }
+
+    .icons-home {
+        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .img-home {
