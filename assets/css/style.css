@@ -252,11 +252,16 @@ html {
 
 /* About START */
 #about {
-    background-color: var(--text);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--text);
+}
+
+.rodape-about {
+    width: 100%;
+    transform: rotate(180deg);
 }
 
 .container-about {
@@ -277,13 +282,14 @@ html {
     width: 50%;
 }
 
-.title-about {
-    padding: 2rem;
+.title-about, .content-about {
+    padding: 1rem;
 }
 
 .title-about h2 {
     font-family: Bariol-Bold;
     font-size: 2.5rem;
+    text-align: left;
 }
 
 .container-content--about {
@@ -294,7 +300,7 @@ html {
 .content-about p {
     font-family: Bariol-Regular;
     font-size: 1.5rem;
-    text-align: center;
+    text-align: left;
 }
 /* About END */
 
