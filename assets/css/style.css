@@ -259,10 +259,13 @@ html {
     background-color: var(--text);
 }
 
-.rodape-about {
+/*.rodape-about {
     width: 100%;
-    transform: rotate(180deg);
-}
+    height: calc(100vh - 81px);
+    background-image: url(../img/rodape-home--copia.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+}*/
 
 .container-about {
     display: flex;
@@ -279,7 +282,8 @@ html {
 }
 
 .img-about img {
-    width: 50%;
+    width: 100%;
+    max-width: 350px;
 }
 
 .title-about, .content-about {
@@ -403,6 +407,65 @@ html {
         display: none;
     }
     /* Home END */
+
+    /* About START */
+    /*#about {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-content--about {
+        display: flex;
+        justify-content: center;
+    }*/
+    
+    .container-about .container {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container-img--about {
+        flex: 1;
+    }
+    
+    .img-about img {
+        width: 100%;
+        max-width: 350px;
+    }
+    
+    .title-about, .content-about {
+        padding: 1rem;
+    }
+    
+    .title-about h2 {
+        font-family: Bariol-Bold;
+        font-size: 2.5rem;
+        text-align: center;
+    }
+
+    .line-decoration {
+        width: 200px;
+    }
+    
+    .container-content--about {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    
+    .content-about p {
+        font-family: Bariol-Regular;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    /* About END */
 }
 @media (max-width: 768px ) {
 
