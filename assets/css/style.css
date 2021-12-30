@@ -100,7 +100,7 @@ html {
 
 /* Reset CSS END */
 
-/*  */
+/* Containers START */
 
 .container-fluid {
     padding-right:15px;
@@ -116,7 +116,7 @@ html {
     padding-left:15px;
 }
 
-/*  */
+/* Containers END */
 
 /* header START */
 
@@ -172,8 +172,6 @@ html {
 #home {
     width: 100%;
     height: calc(100vh - 81px);
-    max-width: 100%;
-    max-height: calc(100vh - 81px);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -181,8 +179,8 @@ html {
 }
 
 .rodape-home {
-    width: 100%;
     background-image: url(../img/rodape-home.svg);
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: bottom;
 }
@@ -259,14 +257,6 @@ html {
     background-color: var(--text);
 }
 
-/*.rodape-about {
-    width: 100%;
-    height: calc(100vh - 81px);
-    background-image: url(../img/rodape-home--copia.svg);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}*/
-
 .container-about {
     display: flex;
     justify-content: center;
@@ -275,6 +265,7 @@ html {
 .container-about .container {
     display: flex;
     align-items: center;
+    margin: 30px 0px;
 }
 
 .container-img--about {
@@ -283,7 +274,7 @@ html {
 
 .img-about img {
     width: 100%;
-    max-width: 350px;
+    max-width: 300px;
 }
 
 .title-about, .content-about {
@@ -294,6 +285,10 @@ html {
     font-family: Bariol-Bold;
     font-size: 2.5rem;
     text-align: left;
+}
+
+.line-decoration {
+    width: 200px;
 }
 
 .container-content--about {
@@ -307,6 +302,24 @@ html {
     text-align: left;
 }
 /* About END */
+
+/* Portfolio START */
+#portfolio {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--background-black);
+}
+
+.header-portfolio {
+    background-image: url(../img/header-portifolio.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+/* Portfolio END */
 
 /* media query START */
 @media (max-width: 1200px ) {}
@@ -408,18 +421,7 @@ html {
     }
     /* Home END */
 
-    /* About START */
-    /*#about {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .container-content--about {
-        display: flex;
-        justify-content: center;
-    }*/
-    
+    /* About START */    
     .container-about .container {
         display: flex;
         flex-direction: column;
@@ -434,7 +436,7 @@ html {
     
     .img-about img {
         width: 100%;
-        max-width: 350px;
+        max-width: 300px;
     }
     
     .title-about, .content-about {
