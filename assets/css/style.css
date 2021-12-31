@@ -144,6 +144,7 @@ html {
 #menu a {
     display: block;
     font-family: Bariol-Regular;
+    font-size: 1.3rem;
     color: var(--green);
     padding: 28px .5rem;
 }
@@ -206,13 +207,13 @@ html {
 
 .title-home h1 {
     font-family: Bariol-Bold;
-    font-size: 3.5rem;
+    font-size: 4rem;
     color: var(--text);
 }
 
 .title-home p {
     font-family: Bariol-Regular;
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
     color: var(--green);
 }
