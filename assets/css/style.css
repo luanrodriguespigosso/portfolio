@@ -306,11 +306,14 @@ html {
 /* Portfolio START */
 #portfolio {
     width: 100%;
-    height: 100vh;
     display: flex;
     flex-direction: column;
+    align-content: center;
     justify-content: center;
+    align-items: center;
     background-color: var(--background-black);
+    padding-top: 350px;
+    padding-bottom: 200px;
 }
 
 .header-portfolio {
@@ -320,12 +323,7 @@ html {
     background-position: top;
 }
 
-.container-portfolio {
-    display: flex;
-    justify-content: center;
-}
-
-.container-portfolio .container {
+.container > .title-portfolio {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -335,6 +333,24 @@ html {
     font-family: Bariol-Bold;
     font-size: 2.5rem;
     color: var(--green);
+}
+
+.container > .cards-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.cards {
+    width: 600px;
+    height: auto;
+    border: 1px solid var(--green);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.cards img {
+    border-radius: 5px;
 }
 /* Portfolio END */
 
