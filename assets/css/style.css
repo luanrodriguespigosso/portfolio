@@ -327,6 +327,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 50px 20px;
 }
 
 .title-portfolio h2 {
@@ -335,22 +336,37 @@ html {
     color: var(--green);
 }
 
-.container > .cards-container {
+.container-fluid > .cards-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .cards {
-    width: 600px;
+    width: auto;
+    max-width: 500px;
     height: auto;
-    border: 1px solid var(--green);
+    border: 2px solid var(--green);
     border-radius: 5px;
     margin: 20px;
 }
 
 .cards img {
-    border-radius: 5px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.cards > .title-card {
+    font-family: Bariol-light;
+    font-size: 1.5rem;
+    color: var(--text);
+    margin: 15px;
+}
+
+.cards > .content-card {
+    font-family: Bariol-light;
+    font-size: 1.3rem;
+    color: var(--text);
+    padding: 15px;
 }
 /* Portfolio END */
 
@@ -501,6 +517,23 @@ html {
         text-align: center;
     }
     /* About END */
+
+    /* Portfólio START */
+    #portfolio {
+        padding-top: 200px;
+    }
+    
+    .container-fluid > .cards-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards > .title-card,
+    .cards > .content-card {
+        text-align: center;
+    }
+    /* Portfólio END */
 }
 @media (max-width: 768px ) {
 
