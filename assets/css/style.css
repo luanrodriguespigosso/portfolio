@@ -45,6 +45,10 @@
     font-family: "Bariol-Light";
     box-sizing: border-box;
 }
+body {
+    font-family: "Bariol-light";
+    background-color: var(--background-black);
+}
 
 ul,
 li {
@@ -74,9 +78,9 @@ h6 {
     margin: 0;
 }
 
-body {
-    font-family: "Bariol-light";
-    background-color: var(--background-black);
+textarea:focus, input:focus, button:focus {
+    box-shadow: none;
+    outline: none;
 }
 
 html {
@@ -371,6 +375,82 @@ html {
 }
 /* Portfolio END */
 
+/* Contato START */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 150px;
+}
+
+#contact .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-contact h2 {
+    font-family: Bariol-Bold;
+    font-size: 2.5rem;
+    color: var(--text);
+}
+
+.title-contact {
+    margin: 50px 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 0px;
+}
+
+input::placeholder {
+    color: var(--background-semi--black);
+}
+
+.field {
+    font-family: Bariol-Bold;
+    font-size: 1em;
+    border-radius: 25px;
+    background-color: var(--text);
+    margin: 10px 0px;
+    padding: 1em;
+    border: 0px;
+}
+
+textarea::placeholder {
+    color: var(--background-semi--black);
+}
+
+textarea {
+    height: 200px;
+}
+
+.btn-contact {
+    width: 200px;
+    font-family: Bariol-Bold;
+    font-size: 1em;
+    color: var(--background-semi--black);
+    border-radius: 25px;
+    margin: 10px 0px;
+    padding: 1em;
+    border: 0px;
+}
+
+.btn-contact:hover {
+    background-color: var(--green);
+    color: var(--text);
+}
+
+/* Contato END */
+
 /* media query START */
 @media (max-width: 1200px ) {}
 @media (max-width: 992px ) {
@@ -539,5 +619,12 @@ html {
 @media (max-width: 768px ) {
 
 }
-@media (max-width: 576px ) {}
+@media (max-width: 576px ) {
+    .btn-container {
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
 /* media query END */
