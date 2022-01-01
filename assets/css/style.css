@@ -281,6 +281,8 @@ html {
 .img-about img {
     width: 100%;
     max-width: 300px;
+    height: 300px;
+    border-radius: 50%;
 }
 
 .title-about, .content-about {
@@ -476,7 +478,7 @@ textarea {
     font-family: Bariol-Regular;
     font-size: 1.5em;
     font-weight: 500;
-    color: var(--content-text);
+    color: var(--text);
 }
 
 .social-networks {
