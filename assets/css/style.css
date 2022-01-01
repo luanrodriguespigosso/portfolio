@@ -227,7 +227,8 @@ html {
     align-items: center;
 }
 
-.fa-github, .fa-linkedin {
+.icons-home .fa-github,
+.icons-home .fa-linkedin {
     color: var(--text);
     font-size: 40px;
     padding-top: 1rem;
@@ -316,7 +317,7 @@ html {
     align-content: center;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-black);
+    background-color: var(--background-semi--black);
     padding-top: 350px;
     padding-bottom: 200px;
 }
@@ -383,6 +384,7 @@ html {
     justify-content: center;
     align-items: center;
     padding-bottom: 150px;
+    background-color: var(--background-black);
 }
 
 #contact .container {
@@ -448,8 +450,55 @@ textarea {
     background-color: var(--green);
     color: var(--text);
 }
-
 /* Contato END */
+
+/* Footer START */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    background-color: var(--background-black);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#footer > .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-family: Bariol-Regular;
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--content-text);
+}
+
+.social-networks {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.linkedin  .fa-linkedin-in,
+.github .fa-github,
+.mail .fa-envelope {
+    color: var(--text);
+    font-size: 30px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1.5rem;
+}
+
+.linkedin  .fa-linkedin-in:hover,
+.github .fa-github:hover,
+.mail .fa-envelope:hover {
+    color: var(--green);
+}
+
+
+/* Footer END */
 
 /* media query START */
 @media (max-width: 1200px ) {}
