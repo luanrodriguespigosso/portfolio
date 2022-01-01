@@ -486,9 +486,7 @@ textarea {
 .mail .fa-envelope {
     color: var(--text);
     font-size: 30px;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1.5rem;
+    padding: 1rem;
 }
 
 .linkedin  .fa-linkedin-in:hover,
@@ -664,6 +662,21 @@ textarea {
         text-align: center;
     }
     /* Portfólio END */
+
+    /* Footer START */
+    #footer > .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .linkedin  .fa-linkedin-in,
+    .github .fa-github,
+    .mail .fa-envelope {
+    padding-top: 2rem;
+}
+    /* Footer END */
 }
 @media (max-width: 768px ) {
 
