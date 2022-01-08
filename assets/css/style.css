@@ -358,7 +358,8 @@ html {
     width: auto;
     max-width: 500px;
     height: auto;
-    border: 1px solid var(--content-text);
+    border: 1px solid var(--background-semi--black);
+    background-color: var(--background-black);
     border-radius: 5px;
     margin: 20px;
 }
