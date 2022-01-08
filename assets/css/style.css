@@ -358,7 +358,7 @@ html {
     width: auto;
     max-width: 500px;
     height: auto;
-    border: 2px solid var(--green);
+    border: 1px solid var(--content-text);
     border-radius: 5px;
     margin: 20px;
 }
