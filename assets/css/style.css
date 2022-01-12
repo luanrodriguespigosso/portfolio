@@ -432,6 +432,7 @@ input::placeholder {
     margin: 10px 0px;
     padding: 1em;
     border: 0px;
+    max-width: 800px;
 }
 
 textarea::placeholder {
