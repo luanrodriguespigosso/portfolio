@@ -18,3 +18,13 @@ function toggleMenu(event) {
 btnMobile.addEventListener('click', toggleMenu);
 btnMobile.addEventListener('touchstart', toggleMenu);
 // menu hamburguer END
+
+// contador de caracteres formulário START
+$(document).on("input", "#msg" , function() {
+    var limit = 500;
+    var total = $(this).val().length;
+    var remaining = limit - total;
+
+    $("#counter").text(remaining);
+});
+// contador de caracteres formulário END

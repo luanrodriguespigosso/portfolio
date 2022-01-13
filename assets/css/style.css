@@ -421,7 +421,7 @@ html {
 }
 
 input::placeholder {
-    color: var(--background-semi--black);
+    color: var(--content-text);
 }
 
 .field {
@@ -436,11 +436,21 @@ input::placeholder {
 }
 
 textarea::placeholder {
-    color: var(--background-semi--black);
+    color: var(--content-text);
 }
 
 textarea {
     height: 200px;
+    min-height: 200px;
+}
+
+.counter-text {
+    font-family: Bariol-Regular;
+    color: var(--content-text);
+}
+
+#counter {
+    color: var(--green);
 }
 
 .btn-contact {

@@ -154,9 +154,10 @@
                 </div>
                 <div class="container">
                     <form class="contact-form" action="/assets/php/send.php" method="post">
-                        <input type="text" name="name" class="field" id="name" aria-describedby="Nome" placeholder="Nome" required>
-                        <input type="mail" name="email" class="field" id="email" aria-describedby="E-mail" placeholder="E-mail" required>
-                        <textarea class="field" name="msg" id="msg" aria-describedby="Mensagem" placeholder="Mensagem" cols="30" rows="10" required></textarea>
+                        <input type="text" name="name" class="field" id="name" aria-describedby="Nome" placeholder="Nome" maxlength="75" required>
+                        <input type="mail" name="email" class="field" id="email" aria-describedby="E-mail" placeholder="E-mail" maxlength="75" required>
+                        <textarea class="field" name="msg" id="msg" aria-describedby="Mensagem" placeholder="Mensagem" cols="30" rows="10" maxlength="500" required></textarea>
+                        <p class="counter-text"><span id="counter">500</span> caracteres restantes.</p>
                         <!--<input type="checkbox" id="checkbox" aria-describedby="caixa de seleção">-->
                         <div class="btn-container">
                             <button type="submit" class="btn-contact">Enviar mensagem</button>
@@ -194,6 +195,7 @@
 
         
         <script src="https://kit.fontawesome.com/51c81d1bbc.js" crossorigin="anonymous" defer></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
         <script src="assets/js/index.js" defer></script>
     </body>
 </html>
