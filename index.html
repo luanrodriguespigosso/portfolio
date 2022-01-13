@@ -154,9 +154,9 @@
                 </div>
                 <div class="container">
                     <form class="contact-form" action="/assets/php/send.php" method="post">
-                        <input type="text" class="field" id="name" aria-describedby="Nome" placeholder="Nome">
-                        <input type="mail" class="field" id="email" aria-describedby="E-mail" placeholder="E-mail">
-                        <textarea class="field" name="" id="msg" aria-describedby="Mensagem" placeholder="Mensagem" cols="30" rows="10"></textarea>
+                        <input type="text" name="name" class="field" id="name" aria-describedby="Nome" placeholder="Nome" required>
+                        <input type="mail" name="email" class="field" id="email" aria-describedby="E-mail" placeholder="E-mail" required>
+                        <textarea class="field" name="msg" id="msg" aria-describedby="Mensagem" placeholder="Mensagem" cols="30" rows="10" required></textarea>
                         <!--<input type="checkbox" id="checkbox" aria-describedby="caixa de seleção">-->
                         <div class="btn-container">
                             <button type="submit" class="btn-contact">Enviar mensagem</button>

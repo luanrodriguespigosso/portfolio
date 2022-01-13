@@ -6,10 +6,8 @@
 
     ini_set( 'display_erros', 1 );
     error_reporting( E_ALL );
-
     $subject = "E-mail do site - ".$name;
     $to = "luanrodriguespigosso@gmail.com";
-    
     $message = "
     <html>
     <body>
@@ -29,5 +27,5 @@
     mail($to,$subject,$message, implode("\r\n", $headers));
 
     header('Location: ../../index.html');
-    
+
 ?>
