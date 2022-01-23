@@ -154,8 +154,8 @@
                 </div>
                 <div class="container">
                     <form class="contact-form" action="/assets/php/send.php" method="post">
-                        <input type="text" name="name" class="field" id="name" aria-describedby="Nome" placeholder="Nome Completo" maxlength="75" pattern="[a-zA-Z]+" required>
-                        <input type="email" name="email" class="field" id="email" aria-describedby="E-mail" placeholder="E-mail" maxlength="75" required>
+                        <input type="text" name="name" class="field" id="name" aria-describedby="Nome" placeholder="Nome Completo" maxlength="75" pattern="[a-zA-Zà-úÀ-Ú ]+" required>
+                        <input type="email" name="email" class="field" id="email" aria-describedby="E-mail" placeholder="E-mail" maxlength="75" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
                         <textarea class="field" name="msg" id="msg" aria-describedby="Mensagem" placeholder="Mensagem" cols="30" rows="10" maxlength="500" required></textarea>
                         <p class="counter-text"><span id="counter">500</span> caracteres restantes.</p>
                         <!--<input type="checkbox" id="checkbox" aria-describedby="caixa de seleção">-->
