@@ -8,7 +8,7 @@
     error_reporting( E_ALL );
     $from = "contato@luanrodriguespigosso.com.br";
     $subject = "E-mail do site - ".$name;
-    $to = "luanrodriguespigosso@gmail.com";
+    $to = "luan@luanrodriguespigosso.com.br";
     $message = "
     <html>
     <body>
