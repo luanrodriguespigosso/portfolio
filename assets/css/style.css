@@ -310,6 +310,34 @@ html {
     text-align: left;
 }
 
+.content-about .btn-container {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: flex-end;
+}
+
+.btn-download {
+    width: 150px;
+    border-radius: 25px;
+    margin: 10px 0px;
+    padding: 1em;
+    border: 0px;
+    background-color: var(--background-black);
+}
+
+.btn-download a {
+    font-family: Bariol-Bold;
+    font-size: 1.2em;
+    padding: 0.8em 1.5em;
+}
+
+.btn-download:hover,
+.btn-download:hover a {
+    background-color: var(--green);
+    color: var(--background-black);
+}
+
 .content-about img {
     display: inline;
 }
