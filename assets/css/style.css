@@ -28,6 +28,7 @@
     --background-black: #131219;
     --background-semi--black: #17161D;
     --content-text: #737380;
+    --content-text-placeholder: #4e4e56;
     --text: #FFFFFF;
     --green: #00DD80;
 }
@@ -449,7 +450,7 @@ html {
 }
 
 input::placeholder {
-    color: var(--content-text);
+    color: var(--content-text-placeholder);
 }
 
 .field {
@@ -464,7 +465,7 @@ input::placeholder {
 }
 
 textarea::placeholder {
-    color: var(--content-text);
+    color: var(--content-text-placeholder);
 }
 
 textarea {
