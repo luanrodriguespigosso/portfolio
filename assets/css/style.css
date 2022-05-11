@@ -396,6 +396,11 @@ html {
     border-radius: 3px 3px 0px 0px;
 }
 
+.img-portfolio img {
+    max-width: 498px;
+    height: auto;
+}
+
 .cards > .title-card {
     font-family: Bariol-light;
     font-size: 1.5rem;
