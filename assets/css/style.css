@@ -392,6 +392,10 @@ html {
     margin: 20px;
 }
 
+.cards:hover {
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
+}
+
 .cards img {
     border-radius: 3px 3px 0px 0px;
 }
