@@ -393,6 +393,9 @@ html {
 }
 
 .cards:hover {
+    -webkit-transform: scale(1.01);
+    -ms-transform: scale(1.02);
+    transform: scale(1.02);
     box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
 }
 
