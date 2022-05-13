@@ -1,0 +1,29 @@
+{
+    "short_name": "luanrodriguespigosso",
+    "name": "luanrodriguespigosso",
+    "icons": [
+      {
+        "src": "assets/img/logo-page.png",
+        "type": "image/svg+xml",
+        "sizes": "512x512",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/logo-page.png",
+        "type": "image/png",
+        "sizes": "192x192",
+        "purpose": "any maskable"
+      },
+      {
+        "src": "assets/img/logo-page.png",
+        "type": "image/png",
+        "sizes": "124x124",
+        "purpose": "any maskable"
+      }
+    ],
+    "start_url": "/?source=pwa",
+    "background_color": "##00dd80",
+    "display": "standalone",
+    "scope": "index.html",
+    "theme_color": "##00dd80"
+}
