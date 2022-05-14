@@ -136,8 +136,13 @@ html {
     justify-content: space-between;
     align-items: center;
     box-sizing: border-box;
-    padding: 1rem;
+    padding: 0.5rem;
     height: 80px;
+}
+
+#header .container #logo-menu img {
+    width: 60px;
+    height: 60px;
 }
 
 #menu {
