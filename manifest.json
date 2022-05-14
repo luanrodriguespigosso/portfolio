@@ -1,19 +1,29 @@
 {
-    "name": "Luan Rodrigues Pigosso",
-    "short_name": "luanrp",
-    "theme_color": "#00dd80",
-    "background_color": "#131219",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/?utm_source=homescreen",
-    "lang": "pt-BR",
-    "orientation": "any",
-    "icons": [
-      {
-        "src": "assets/img/logo-page128x128.svg",
-        "sizes": "128x128",
-        "type": "image/png",
-        "purpose": "any maskable"
-      }
-    ]
-  }
+  "short_name": "Luan Rodrigues Pigosso",
+  "name": "luanrp",
+  "icons": [
+    {
+      "src": "assets/img/logo-page128x128.svg",
+      "type": "image/svg+xml",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/logo-page128x128.svg",
+      "type": "image/svg",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/img/logo-page128x128.svg",
+      "type": "image/svg",
+      "sizes": "124x124",
+      "purpose": "any maskable"
+    }
+  ],
+  "start_url": "/?source=pwa",
+  "background_color": "#131219",
+  "display": "standalone",
+  "scope": "index.html",
+  "theme_color": "#00dd80"
+}
