@@ -3,20 +3,20 @@
   "name": "luanrp",
   "icons": [
     {
-      "src": "assets/img/logo-page128x128.svg",
+      "src": "assets/img/logo-page128x128.png",
       "type": "image/svg+xml",
       "sizes": "512x512",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/img/logo-page128x128.svg",
-      "type": "image/svg",
+      "src": "assets/img/logo-page128x128.png",
+      "type": "image/png",
       "sizes": "192x192",
       "purpose": "any maskable"
     },
     {
-      "src": "assets/img/logo-page128x128.svg",
-      "type": "image/svg",
+      "src": "assets/img/logo-page128x128.png",
+      "type": "image/png",
       "sizes": "124x124",
       "purpose": "any maskable"
     }
