@@ -402,9 +402,8 @@ html {
     max-width: 498px;
     width: 100%;
     height: auto;
-    border: 1px solid var(--background-semi--black);
     background-color: var(--background-black);
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 20px;
 }
 
@@ -415,12 +414,12 @@ html {
     box-shadow: 0 0 1em rgba(255, 255, 255, 0.1);*/
     transform: scale(1.05);
     transition: ease-in-out all .2s;
-    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
-    border-radius: 5px;
+    /*box-shadow: 0 0 15px rgba(0, 0, 0, 1);*/
+    border-radius: 10px;
 }
 
 .cards img {
-    border-radius: 3px 3px 3px 3px;
+    border-radius: 10px;
 }
 
 .img-portfolio img {
