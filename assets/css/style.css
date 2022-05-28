@@ -162,7 +162,9 @@ html {
     display: block;
     font-family: Bariol-Regular;
     font-size: 1.3rem;
-    color: var(--green);
+    font-weight: 500;
+    color: var(--content-text);
+    transition: all .3s ease;
     padding: 28px .5rem;
 }
 
@@ -171,6 +173,7 @@ html {
 }
 
 #menu a:hover {
+    color: var(--text);
     border-bottom: 2px solid var(--green);
 }
 
@@ -386,7 +389,7 @@ html {
 .title-portfolio h2 {
     font-family: Bariol-Bold;
     font-size: 2.5rem;
-    color: var(--green);
+    color: var(--text);
 }
 
 .container-fluid > .cards-container {
@@ -446,6 +449,7 @@ html {
     align-items: center;
     padding-bottom: 150px;
     background-color: var(--background-black);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #contact .container {
@@ -648,7 +652,7 @@ textarea {
         font-family: Bariol-Regular;
         font-size: 1.5rem;
         letter-spacing: 1px;
-        color: var(--green);
+        color: var(--content-text);
         text-align: center;
         padding: 1rem 0;
     }
