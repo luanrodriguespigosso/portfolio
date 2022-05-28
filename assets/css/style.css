@@ -481,7 +481,7 @@ input::placeholder {
 .field {
     font-family: Bariol-Bold;
     font-size: 1em;
-    border-radius: 25px;
+    border-radius: 5px;
     background-color: var(--text);
     margin: 10px 0px;
     padding: 1em;
@@ -511,16 +511,17 @@ textarea {
     width: 200px;
     font-family: Bariol-Bold;
     font-size: 1em;
-    color: var(--background-semi--black);
-    border-radius: 25px;
+    background-color: transparent;
+    color: var(--text);
+    border-radius: 5px;
     margin: 10px 0px;
     padding: 1em;
-    border: 0px;
+    border: 1px solid var(--green);
 }
 
 .btn-contact:hover {
     background-color: var(--green);
-    color: var(--text);
+    color: var(--background-semi--black);
 }
 /* Contato END */
 
