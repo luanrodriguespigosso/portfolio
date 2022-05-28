@@ -163,7 +163,7 @@ html {
     font-family: Bariol-Regular;
     font-size: 1.3rem;
     font-weight: 500;
-    color: var(--content-text);
+    color: var(--text);
     transition: all .3s ease;
     padding: 28px .5rem;
 }
@@ -173,7 +173,7 @@ html {
 }
 
 #menu a:hover {
-    color: var(--text);
+    color: var(--content-text);
     border-bottom: 2px solid var(--green);
 }
 
