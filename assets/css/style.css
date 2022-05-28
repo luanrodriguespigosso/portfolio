@@ -409,14 +409,18 @@ html {
 }
 
 .cards:hover {
-    -webkit-transform: scale(1.01);
+    /*-webkit-transform: scale(1.01);
     -ms-transform: scale(1.02);
     transform: scale(1.02);
-    box-shadow: 0 0 1em rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 1em rgba(255, 255, 255, 0.1);*/
+    transform: scale(1.05);
+    transition: ease-in-out all .2s;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 1);
+    border-radius: 5px;
 }
 
 .cards img {
-    border-radius: 3px 3px 0px 0px;
+    border-radius: 3px 3px 3px 3px;
 }
 
 .img-portfolio img {
