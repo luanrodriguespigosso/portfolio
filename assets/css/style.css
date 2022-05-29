@@ -538,18 +538,19 @@ textarea {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--background-black);
+    background-color: var(--background-semi--black);
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 #footer > .container {
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin: 50px 0px;
+    align-items: flex-start;
+    margin: 120px 0px;
 }
 
-.footer-menu {
+.footer-menu,
+.footer-menu--info {
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -557,20 +558,24 @@ textarea {
     font-size: 1.3em;
 }
 
-.footer-menu span {
+.footer-menu span,
+.footer-menu--info span {
     color: var(--text);
     padding: 5px;
 }
 
-.footer-menu li {
+.footer-menu li,
+.footer-menu--info li {
     padding: 5px 5px;
 }
 
-.footer-menu a {
+.footer-menu a,
+.footer-menu--info a {
     position: relative;
 }
 
-.footer-menu a::before {
+.footer-menu a::before,
+.footer-menu--info a::before {
     content: '';
     position: absolute;
     width: 100%;
@@ -584,7 +589,8 @@ textarea {
     transition: transform .4s ease-in-out;
 }
 
-.footer-menu a:hover::before {
+.footer-menu a:hover::before,
+.footer-menu--info a:hover::before {
     transform-origin: left;
     transform: scaleX(1);
 }
@@ -599,7 +605,7 @@ textarea {
 .github .fa-github,
 .mail .fa-envelope {
     color: var(--text);
-    font-size: 30px;
+    font-size: 40px;
     padding: 1rem;
 }
 
@@ -610,15 +616,22 @@ textarea {
 }
 
 #footer > .container-fluid {
-    margin: 25px 0px 25px 0px;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: var(--background-black);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 25px 0px 25px 0px;
 }
 
 .copyright {
     font-family: Bariol-Light;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 24px;
     font-weight: 500;
-    color: var(--content-text);
+    color: var(--text);
 }
 /* Footer END */
 
