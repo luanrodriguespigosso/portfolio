@@ -5,13 +5,13 @@
     {
       "src": "assets/img/logo-page128x128.png",
       "type": "image/png",
-      "sizes": "128x128",
-      "purpose": "any maskable"
+      "sizes": "512x512 192x192 64x64 32x32 24x24 16x16",
+      "purpose": "image/x-icon"
     }
   ],
-  "start_url": "/?source=pwa",
-  "background_color": "#131219",
+  "start_url": "./index.html",
   "display": "standalone",
-  "scope": "index.html",
-  "theme_color": "#00dd80"
+  "theme_color": "#00dd80",
+  "background_color": "#131219",
+  "scope": "index.html"
 }
