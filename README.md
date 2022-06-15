@@ -2,10 +2,10 @@
 
 <img src="pc.svg" min-width="300px" max-width="300px" width="300px" align="right" alt="Computador">-->
 
-<img src="img-readme.png" min-width="400px" max-width="400px" width="300px" align="right" alt="logo iuricode">
+<img src="img-readme.png" min-width="400px" max-width="400px" width="400px" align="right" alt="logo iuricode">
 
 <p align="left"> 
-  <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="19px"> Olá, visitante! Meu nome é Luan Rodrigues Pigosso.
+  🖖 Olá, visitante! Meu nome é Luan Rodrigues Pigosso.
 </p>
 
 <p align="left">
@@ -17,7 +17,7 @@
 </p>
 
 <p align="left">
-  🛠️ Ferramentas: <strong>Vs Code, Figma, Canva, Trello, Vercel, Git e GitHub</strong>
+  💼 Ferramentas: <strong>Vs Code, Figma, Canva, Trello, Vercel, Git e GitHub</strong>
 </p>
 
 </br>
