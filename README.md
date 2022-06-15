@@ -5,7 +5,7 @@
 <img src="img-readme.png" min-width="400px" max-width="400px" width="300px" align="right" alt="logo iuricode">
 
 <p align="left"> 
-  <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="30px"> Olá, visitante! Meu nome é Luan Rodrigues Pigosso.
+  <img src="https://raw.githubusercontent.com/kaueMarques/kaueMarques/master/hi.gif" width="19px"> Olá, visitante! Meu nome é Luan Rodrigues Pigosso.
 </p>
 
 <p align="left">
