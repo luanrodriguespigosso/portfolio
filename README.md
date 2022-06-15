@@ -2,7 +2,7 @@
 
 <img src="pc.svg" min-width="300px" max-width="300px" width="300px" align="right" alt="Computador">-->
 
-<img src="img-readme.png" min-width="400px" max-width="400px" width="400px" align="right" alt="logo iuricode">
+<img src="img-readme.png" min-width="200px" max-width="200px" width="200px" align="right" alt="logo foguete com astronauta">
 
 <p align="left"> 
   🖖 Olá, visitante! Meu nome é Luan Rodrigues Pigosso.
