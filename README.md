@@ -1,33 +1,22 @@
-<!--<img src="https://raw.githubusercontent.com/MicaelliMedeiros/micaellimedeiros/master/image/computer-illustration.png" min-width="400px" max-width="400px" width="400px" align="right" alt="compute">
+<h1 align="center">
+  Portfólio - Luan Pigosso
+</h1>
 
-<img src="pc.svg" min-width="300px" max-width="300px" width="300px" align="right" alt="Computador">-->
+![preview](assets/img/preview-home.png)
 
-<img src="img-readme.png" min-width="300px" max-width="300px" width="300px" align="right" alt="logo foguete com astronauta">
+<h4 align="center"><a href="https://www.luanrodriguespigosso.com.br">Clique para visitar o projeto</a></h4>
 
-<p align="left"> 
-  🖖 Olá, visitante! Meu nome é Luan Rodrigues Pigosso.
-</p>
+## 📚 Seções
 
-<p align="left">
-  ☕ Habilidades: <strong>HTML, CSS, WordPress</strong>
-</p>
+- **Home:** Nele temos uma breve apresentação;
+- **Quem sou:** Nessa seção tenho uma descrição dizendo um pouco sobre quem sou;
+- **Portfólio:** Apresenta alguns projetos desenvolvidos e com link direto para os respectivos projeto publicado;
+- **Blog:** Terá conteúdo de programação e tecnologia;
+- **Contato:** Neste formulário é possível me enviar seu qualquer dúvida, sugestão ou até mesmo expandir sua rede de *networking* (pessoal);
 
-<p align="left">
-  📚 Estudando: <strong>JavaScript, Node.js, SQL, React</strong>
-</p>
+## 💼 Tecnologias utilizadas
 
-<p align="left">
-  💼 Ferramentas: <strong>Vs Code, Figma, Canva, Trello, Vercel, Git e GitHub</strong>
-</p>
-
-</br>
-
-<p align="left">
-  <a href="https://www.linkedin.com/in/luanpigosso" alt="Linkedin">
-    <img src="https://img.shields.io/badge/-Luan%20Pigosso-5433CC?style=flat-square&logo=Linkedin&logoColor=white&link=https://www.linkedin.com/in/luanpigosso" />
-  </a>
-
-  <a href="https://discord.gg/8zwDhbtX" alt="Discord">
-    <img src="https://img.shields.io/badge/-Luan%20Pigosso-5433CC?style=flat-square&logo=Discord&logoColor=white&link=https://discord.gg/8zwDhbtX" />
-  </a>
-</p>
+- HTML;
+- CSS;
+- JavaScript;
+- PHP;
