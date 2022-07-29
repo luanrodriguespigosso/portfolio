@@ -2,176 +2,123 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="author" content="Luan Rodrigues Pigosso" />
-    <meta name="description" content="Desenvolvimento de páginas web com foco em performance, responsividade, acessibilidade e SEO" />
-    <meta name="keywords" content="sites, site, web, desenvolvimento, frontend, programador, luan, rodrigues, pigosso, luanrodriguespigosso, front-end, designer, agencia, profissional, profissionais, criacao, criação, website, portfólio" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00dd80" />
-    <meta name="copyright" content="luanrodriguespigosso 2021" />
-    <meta http-equiv="content-language" content="pt-br" />
-    <meta property="og:image" content="https://luanrodriguespigosso.com.br/assets/img/preview-home.webp" />
-    <meta property="og:image" content="https://luanrodriguespigosso.vercel.app/assets/img/preview-home.webp" />
-    <meta property="og:title" content="Portfólio | Luan Rodrigues Pigosso - Front-end Developer" />
-    <meta property="og:description" content="Desenvolvimento de paginas web com foco em performance, responsividade, acessibilidade e SEO" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <title>Portfólio | Luan Rodrigues Pigosso - Front-end Developer</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <!-- Browser icon -->
-    <link rel="shortcut icon" href="assets/img/logo-page128x128.svg" type="image/x-icon" />
-    <link rel="icon" href="/assets/img/logo-page128x128.svg" />
-    <link rel="apple-touch-icon" href="assets/img/logo-page128x128.svg" />
-    <link rel="canonical" href="https://luanrodriguespigosso.com.br/" />
+  <meta charset="UTF-8" />
+  <meta name="author" content="Luan Rodrigues Pigosso" />
+  <meta name="description" content="Desenvolvimento de páginas web com foco em performance, responsividade, acessibilidade e SEO" />
+  <meta name="keywords" content="sites, site, web, desenvolvimento, frontend, programador, luan, rodrigues, pigosso, luanrodriguespigosso, front-end, designer, agencia, profissional, profissionais, criacao, criação, website, portfólio" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#FFFFFF" />
+  <meta name="copyright" content="luanrodriguespigosso 2021" />
+  <meta http-equiv="content-language" content="pt-br" />
+  <meta property="og:image" content="https://luanrodriguespigosso.com.br/assets/img/preview-home.webp" />
+  <meta property="og:image" content="https://luanrodriguespigosso.vercel.app/assets/img/preview-home.webp" />
+  <meta property="og:title" content="Portfólio | Luan Rodrigues Pigosso - Front-end Developer" />
+  <meta property="og:description" content="Desenvolvimento de paginas web com foco em performance, responsividade, acessibilidade e SEO" />
+
+  <title>Portfólio | Luan Rodrigues Pigosso - Front-end Developer</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Signika:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Browser icon -->
+  <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon" />
+  <link rel="icon" href="/assets/img/logo.svg" />
+  <link rel="apple-touch-icon" href="assets/img/logo.svg" />
+  <link rel="canonical" href="https://luanrodriguespigosso.com.br/" />
 </head>
 
 <body>
-    <header id="header">
-        <div class="container">
-            <a id="logo-menu" href="/" aria-label="Retorna para a pagina inicial">
-                <img src="/assets/img/logo-page128x128.svg" alt="Logo Luan Rodrigues Pigosso">
+
+  <header>
+    <!-- <div class="container__header"> -->
+    <nav id="navigation" class="styles_navHeader">
+      <button id="styles_btnMobile" aria-label="Abrir menu" aria-haspopup="true" aria-controls="styles_listHeader" aria-expanded="false">
+        <span id="styles_btnBurger"></span>
+      </button>
+      <ul class="styles_listHeader" role="menu">
+        <li class="styles_itemHeader">
+          <a class="styles_linkHeader" href="/">Projetos</a>
+        </li>
+        <li class="styles_itemHeader">
+          <a class="styles_linkHeader" href="/">Tecnologias</a>
+        </li>
+        <li class="styles_itemHeader">
+          <a class="styles_linkHeader" href="/">Sobre min</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- </div> -->
+  </header>
+
+  <main>
+    <!-- <section class="home">
+      <div class="container home__height">
+        <div class="home__content">
+          <div class="home__title">
+            <h1>Luan Pigosso</h1>
+          </div>
+          <div class="home_caption">
+            <h2>&nbsp;Front-end Developer</h2>
+          </div>
+          <div class="home__social">
+            <a href="https://github.com/luanrodriguespigosso" class="home__icon" title="GitHub" target="_blank">
+              <i class="fa-brands fa-github-square"></i>
             </a>
-            <nav id="nav">
-                <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
-                    <span id="hamburguer"></span>
-                </button>
-                <ul id="menu" role="menu">
-                    <li role="menuitem">
-                        <a href="#home">Início</a>
-                    </li>
-                    <li role="menuitem">
-                        <a href="#about">Quem Sou</a>
-                    </li>
-                    <li role="menuitem">
-                        <a href="#portfolio">Portfólio</a>
-                    </li>
-                </ul>
-            </nav>
+            <a href="https://www.linkedin.com/in/luanpigosso/" class="home__icon" title="LinkedIn" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
         </div>
-    </header>
-
-    <main>
-        <section id="home" class="rodape-home">
-            <div class="container-content--home">
-                <div class="container">
-                    <div class="title-home">
-                        <h1>Luan R Pigosso.</h1>
-                        <p>Front-end Developer</p>
-                        <div class="icons-home">
-                            <a href="https://github.com/luanrodriguespigosso" aria-label="Github" target="_blank">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="https://www.linkedin.com/in/luanpigosso" aria-label="Linkedin" target="_blank">
-                                <i class="fab fa-linkedin"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="img-home">
-                        <img src="assets/img/feeling-proud.svg" alt="Pessoa sentada na mesa do lado esquerdo e monitor sobre a mesa do lado direito, exibindo código na tela">
-                    </div>
-                </div>
+        <div class="home__box">
+          <div class="home__world">
+            <div class="home__html">
+              <img src="/assets/img/icon_html5.svg" alt="">
             </div>
-        </section>
-
-        <section id="about" class="rodape-about">
-            <div class="container-about">
-                <div class="container">
-                    <div class="container-img--about">
-                        <div class="img-about">
-                            <img src="assets/img/perfil-about.webp" loading="lazy" alt="Foto de perfil luan rodrigues pigosso sorrindo">
-                        </div>
-                    </div>
-                    <div class="container-content--about">
-                        <div class="title-about">
-                            <h2>Quem Sou</h2>
-                            <hr class="line-decoration">
-                        </div>
-                        <div class="content-about">
-                            <p>
-                                Olá, visitante! Me chamo Luan.<br>
-                                Sou Front-end developer, realizo o desenvolvimento de protótipos, interfaces modernas e de alta qualidade, sempre visando performance, responsividade e SEO.
-                            </p>
-                        </div>
-                    </div>
-                </div>
+            <div class="home__css">
+              <img src="/assets/img/icon_css3.svg" alt="">
             </div>
-        </section>
-
-        <section id="portfolio" class="header-portfolio">
-            <div class="container">
-                <div class="title-portfolio">
-                    <h2>Portfólio</h2>
-                </div>
+            <div class="home__js">
+              <img src="/assets/img/icon_javascript.svg" alt="">
             </div>
-            <div class="container-fluid">
-                <div class="cards-container">
-                    <div class="cards">
-                        <div class="img-portfolio">
-                            <a href="https://luanrodriguespigosso.github.io/unes-universidade/" target="_blank">
-                                <img src="assets/img/unes-universidade.webp" alt="Projeto Unes Universidade, curso" loading="lazy">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="img-portfolio">
-                            <a href="https://luanrodriguespigosso.github.io/awax/" target="_blank">
-                                <img src="assets/img/awax.webp" alt="Projeto Awax cruso B7web" loading="lazy">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="cards">
-                        <div class="img-portfolio">
-                            <a href="https://webview.dev.br" target="_blank">
-                                <img src="assets/img/webviewtech.webp" alt="Agência de criação de site profissionais" loading="lazy">
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="home__react animate__animated">
+              <img src="/assets/img/icon_react.svg" alt="">
             </div>
-        </section>
-
-        <footer id="footer">
-            <div class="container">
-                <div class="footer-menu">
-                    <span>
-                        <h3>Menu</h3>
-                    </span>
-                    <ul>
-                        <li><a href="#header">Inicio</a></li>
-                        <li><a href="#about">Quem sou</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
-                    </ul>
-                </div>
-                <div class="social-networks">
-                    <div class="linkedin">
-                        <a href="https://www.linkedin.com/in/luanpigosso" aria-label="Linkedin" target="_blank">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
-                    <div class="github">
-                        <a href="https://github.com/luanrodriguespigosso" aria-label="Github" target="_blank">
-                            <i class="fab fa-github"></i>
-                        </a>
-                    </div>
-                    <div class="mail">
-                        <a href="mailto:luanrodriguespigosso@gmail.com?" aria-label="Email" target="_blank">
-                            <i class="fas fa-envelope"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="home__typescript animate__animated animate__infinite">
+              <img src="/assets/img/icon_typescript.svg" alt="">
             </div>
-            <div class="container-fluid">
-                <div class="copyright">
-                    <span>2021-2022 © Luan Rodrigues Pigosso - Todos os direitos reservados.</span>
-                </div>
+            <div class="home__bootstrap">
+              <img src="/assets/img/icon_bootstrap.svg" alt="">
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+    </section> -->
 
-    </main>
+    <section id="projects">
+      <div class="container">
+        <div class="card">
+          <!-- <img src="/assets/img/webviewtech.webp" alt="">
+          <div class="card__content">
+            <h3>title</h3>
+            <p>description</p>
+            <button>Visitar</button>
+          </div> -->
+        </div>
+      </div>
+    </section>
 
-    <script src="https://kit.fontawesome.com/51c81d1bbc.js" crossorigin="anonymous" defer></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" defer></script>
-    <script src="assets/js/index.js" defer></script>
+    <section id="hard__Skills"></section>
+
+    <section id="soft__Skills"></section>
+  </main>
+
+  <footer></footer>
+
+  <script src="https://kit.fontawesome.com/51c81d1bbc.js" crossorigin="anonymous"></script>
+  <script src="/assets/js/index.js"></script>
 </body>
 
 </html>

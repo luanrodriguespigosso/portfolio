@@ -1,20 +1,17 @@
-// menu hamburguer START
-const btnMobile = document.getElementById("btn-mobile");
+const bntMobile = document.getElementById("styles_btnMobile");
 
 function toggleMenu(event) {
   if (event.type === "touchstart") event.preventDefault();
-  const nav = document.getElementById("nav");
-  nav.classList.toggle("active");
-
-  const active = nav.classList.contains("active");
+  const navigation = document.getElementById("navigation");
+  navigation.classList.toggle("active");
+  const active = navigation.classList.contains("active");
   event.currentTarget.setAttribute("aria-expanded", active);
+
   if (active) {
-    event.currentTarget.setAttribute("aria-label", "Fechar Menu");
+    event.currentTarget.setAttribute("aria-label", "Fechar menu");
   } else {
-    event.currentTarget.setAttribute("aria-label", "Abrir Menu");
+    event.currentTarget.setAttribute("aria-label", "Abrir menu");
   }
 }
-
-btnMobile.addEventListener("click", toggleMenu);
-btnMobile.addEventListener("touchstart", toggleMenu);
-// menu hamburguer END
+bntMobile.addEventListener("click", toggleMenu);
+bntMobile.addEventListener("touchstart", toggleMenu);
