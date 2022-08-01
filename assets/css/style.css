@@ -314,7 +314,21 @@ header {
 }
 
 .card__content p {
-  margin: 1rem 0 5rem 0;
+  margin: 1rem 0;
+}
+
+.card_techs {
+  font-size: 2.5rem;
+  color: var(--title);
+  display: flex;
+  align-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 4rem;
+}
+
+.card_techs span:hover {
+  color: var(--secondary);
 }
 
 .card__content button {
