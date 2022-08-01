@@ -332,8 +332,6 @@ header {
 }
 
 .card__content button {
-  font-size: 1.8rem;
-  color: var(--primary);
   background: var(--secondary);
   border: none;
   border-radius: 0.5rem;
@@ -342,6 +340,11 @@ header {
   right: 0;
   bottom: 0;
   cursor: pointer;
+}
+
+.card__content button a {
+  font-size: 1.8rem;
+  color: var(--primary);
 }
 
 .card__content button:hover {
