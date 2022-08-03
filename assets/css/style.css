@@ -320,6 +320,7 @@ header {
 }
 
 .card__content p {
+  min-height: 12rem;
   margin: 1rem 0;
 }
 
