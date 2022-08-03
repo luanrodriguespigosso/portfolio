@@ -299,10 +299,10 @@ header {
   box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.5);
 }
 
-/* .card__image {
+.card__video {
   min-width: 25rem;
   min-height: 14.5rem;
-} */
+}
 
 .card__content {
   display: flex;
@@ -324,7 +324,16 @@ header {
   margin: 1rem 0;
 }
 
-.card_techs {
+.card__content p span a {
+  color: var(--secondary);
+  cursor: pointer;
+}
+
+.card__content p span a:hover {
+  filter: brightness(0.8);
+}
+
+.card__techs {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
@@ -333,15 +342,16 @@ header {
   margin: 0 0 4rem;
 }
 
-.card_techs span {
+.card__techs span {
   font-size: 2.5rem;
   color: var(--title);
   display: flex;
   align-content: center;
   align-items: center;
+  position: relative;
 }
 
-.card_techs span:hover {
+.card__techs span:hover {
   color: var(--secondary);
 }
 
