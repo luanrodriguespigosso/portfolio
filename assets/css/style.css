@@ -395,22 +395,30 @@ header {
   margin-bottom: 5rem;
 }
 
-.hardSkills__language--html span {
-  width: auto;
+.hardSkills__language--icon {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 14rem;
   height: auto;
+}
+
+.hardSkills__language--icon span {
   color: var(--primary);
-  background: var(--secondary);
+  background: var(--title);
   border-radius: 0.5rem;
   padding: 0.3rem 0.5rem;
 }
 
-.hardSkills__language--html img {
-  max-width: 10rem;
+.hardSkills__language--icon img {
+  max-width: 9rem;
 }
 
 .hardSkills__progress {
   width: 100%;
-  padding: 0 0 1rem 3rem;
+  padding: 0 0 1rem 0;
 }
 
 .hardSkills__level {
@@ -422,7 +430,11 @@ header {
   margin: 1rem 0;
 }
 
-.hardSkills__progressBar {
+.hardSkills__progressBar--html,
+.hardSkills__progressBar--css,
+.hardSkills__progressBar--js,
+.hardSkills__progressBar--bootstrap,
+.hardSkills__progressBar--git {
   position: relative;
   display: inline-block;
   background: var(--primary);
@@ -433,7 +445,11 @@ header {
   overflow: hidden;
 }
 
-.hardSkills__progressBar::before {
+.hardSkills__progressBar--html::before,
+.hardSkills__progressBar--css::before,
+.hardSkills__progressBar--js::before,
+.hardSkills__progressBar--bootstrap::before,
+.hardSkills__progressBar--git::before {
   content: "";
   position: absolute;
   top: 0;
@@ -441,16 +457,59 @@ header {
   width: 0;
   height: 100%;
   background: var(--secondary);
-  animation: progress__animation 3s forwards;
+}
+
+.hardSkills__progressBar--html::before {
+  animation: progress__animation--html 3s 100ms forwards;
+}
+
+.hardSkills__progressBar--css::before {
+  animation: progress__animation--css 3s 200ms forwards;
+}
+
+.hardSkills__progressBar--js::before {
+  animation: progress__animation--js 3s 300ms forwards;
+}
+
+.hardSkills__progressBar--bootstrap::before {
+  animation: progress__animation--bootstrap 3s 400ms forwards;
+}
+
+.hardSkills__progressBar--git::before {
+  animation: progress__animation--git 3s 500ms forwards;
 }
 
 progress {
   opacity: 0;
 }
 
-@keyframes progress__animation {
+@keyframes progress__animation--html {
   to {
     width: 85%;
+  }
+}
+
+@keyframes progress__animation--css {
+  to {
+    width: 70%;
+  }
+}
+
+@keyframes progress__animation--js {
+  to {
+    width: 5%;
+  }
+}
+
+@keyframes progress__animation--bootstrap {
+  to {
+    width: 35%;
+  }
+}
+
+@keyframes progress__animation--git {
+  to {
+    width: 60%;
   }
 }
 
@@ -493,10 +552,6 @@ progress {
 @media (max-width: 939px) {
   .projects__title {
     text-align: center;
-  }
-
-  .hardSkills__progress {
-    padding: 0 0 1rem 2rem;
   }
 }
 
@@ -597,6 +652,6 @@ progress {
   }
 }
 
-/* 1120px */
+/* 1120px 
 @media (max-width: 70em) {
-}
+}*/
