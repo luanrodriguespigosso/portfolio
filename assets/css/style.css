@@ -261,7 +261,6 @@ header {
     rgba(93, 50, 180, 1) 60%,
     rgba(81, 43, 157, 1) 100%
   );
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#6938cc",endColorstr="#512b9d",GradientType=1);
   max-width: 112rem;
   height: auto;
   border-radius: 1.5rem;
