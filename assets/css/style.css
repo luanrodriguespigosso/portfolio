@@ -235,9 +235,48 @@ header {
   }
 } */
 
+#softSkills,
 #projects,
 #hardSkills {
-  margin-bottom: 10rem;
+  margin-bottom: 15rem;
+}
+
+#softSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  background: var(--secondary);
+}
+
+.softSkills__content {
+  height: 50rem;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background: var(--primary);
+  border-radius: 1rem;
+  padding: 2rem;
+  margin: 10rem 0;
+  box-shadow: 1rem 2rem 1rem -1rem rgba(0, 0, 0, 0.7);
+}
+
+.softSkills__avatar {
+  background: var(--primary);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: auto 5rem;
+  min-width: 40rem;
+  height: auto;
+}
+
+.softSkills__aboutMe {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  margin: auto 5rem;
 }
 
 .projects__background {
