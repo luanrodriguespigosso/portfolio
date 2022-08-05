@@ -186,7 +186,7 @@ header {
   top: 52%;
   filter: drop-shadow(0 0 7px var(--bg-icon-css-ts));
   animation: pulse;
-  animation-duration: 4s;
+  animation-duration: 3s;
 }
 
 .home__bootstrap {

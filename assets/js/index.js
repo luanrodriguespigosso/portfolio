@@ -1,3 +1,7 @@
+$(function () {
+  AOS.init();
+});
+
 const bntMobile = document.getElementById("styles_btnMobile");
 
 function toggleMenu(event) {
