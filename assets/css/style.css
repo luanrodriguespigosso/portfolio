@@ -251,33 +251,44 @@ header {
 }
 
 .softSkills__content {
-  height: 50rem;
+  min-height: 50rem;
   display: flex;
   align-content: center;
   justify-content: center;
   align-items: center;
   background: var(--primary);
   border-radius: 1rem;
+  box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.5);
   padding: 2rem;
   margin: 10rem 0;
-  box-shadow: 1rem 2rem 1rem -1rem rgba(0, 0, 0, 0.7);
 }
 
 .softSkills__avatar {
+  min-width: 40rem;
+  height: auto;
   background: var(--primary);
   border-radius: 1rem;
   padding: 1rem;
   margin: auto 5rem;
-  min-width: 40rem;
-  height: auto;
 }
 
 .softSkills__aboutMe {
+  min-height: 30rem;
   display: flex;
   flex-direction: column;
+  gap: 4rem;
   padding: 1rem;
   margin: auto 5rem;
 }
+
+.softSkills__aboutMe h2 {
+  font-size: 3.6rem;
+  font-weight: normal;
+}
+
+/* .softSkills__aboutMe p {
+  margin-top: 5rem;
+} */
 
 .projects__background {
   background: var(--secondary);
