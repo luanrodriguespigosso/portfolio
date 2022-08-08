@@ -76,7 +76,7 @@ header {
 
 .styles_linkHeader:hover,
 .home__social a:hover {
-  color: var(--primary-hover);
+  filter: brightness(0.7);
 }
 
 .container {
@@ -107,8 +107,8 @@ header {
   font-size: 6.4rem;
 }
 
-.home_caption h2 {
-  font-size: 2rem;
+.home_caption p {
+  font-size: 2.6rem;
   margin-bottom: 1rem;
 }
 
@@ -261,6 +261,7 @@ header {
   box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.5);
   padding: 2rem;
   margin: 10rem 0;
+  position: relative;
 }
 
 .softSkills__avatar {
@@ -268,31 +269,69 @@ header {
   height: auto;
   background: var(--primary);
   border-radius: 1rem;
+  box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.7);
   padding: 1rem;
   margin: auto 5rem;
+  position: relative;
+}
+
+.softSkills__avatar a {
+  position: absolute;
+  left: 20%;
+  top: 50%;
+  opacity: 0;
 }
 
 .softSkills__aboutMe {
   min-height: 30rem;
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  justify-content: space-around;
   padding: 1rem;
   margin: auto 5rem;
 }
 
 .softSkills__aboutMe h2 {
-  font-size: 3.6rem;
-  font-weight: normal;
+  font-size: 4.6rem;
+  font-weight: 500;
+  color: var(--title);
 }
 
-/* .softSkills__aboutMe p {
-  margin-top: 5rem;
-} */
+.softSkills__button {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.softSkills__button button {
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: var(--secondary);
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.softSkills__button a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary);
+  padding: 0.7rem 1rem;
+}
+
+.softSkills__button button:hover {
+  background: none;
+  border: 0.1rem solid var(--secondary);
+  border-radius: 0.5rem;
+}
+
+.softSkills__button a:hover {
+  color: var(--secondary);
+}
 
 .projects__background {
   background: var(--secondary);
-  /* background: rgb(105, 56, 204); */
   background: -moz-linear-gradient(
     90deg,
     rgba(105, 56, 204, 1) 0%,
@@ -319,9 +358,9 @@ header {
   margin: 0 auto;
 }
 
-.projects__title {
-  font-size: 3.6rem;
-  font-weight: normal;
+.projects__title h2 {
+  font-size: 4.6rem;
+  font-weight: 500;
   color: var(--primary);
   padding: 0 1.5rem 5rem;
 }
@@ -429,9 +468,9 @@ header {
   padding: 0 1.5rem;
 }
 
-.hardSkills__title {
-  font-size: 3.6rem;
-  font-weight: normal;
+.hardSkills__title h2 {
+  font-size: 4.6rem;
+  font-weight: 500;
   color: var(--title);
   padding-bottom: 8rem;
 }
