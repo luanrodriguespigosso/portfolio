@@ -224,17 +224,6 @@ header {
   }
 }
 
-/* @keyframes rotate-center {
-  0% {
-    -webkit-transform: rotate(0);
-    transform: rotate(0);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-} */
-
 #softSkills,
 #projects,
 #hardSkills {
@@ -256,6 +245,7 @@ header {
   align-content: center;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
   background: var(--primary);
   border-radius: 1rem;
   box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.5);
@@ -265,13 +255,13 @@ header {
 }
 
 .softSkills__avatar {
-  min-width: 40rem;
-  height: auto;
+  width: 100%;
+  max-width: 40rem;
   background: var(--primary);
   border-radius: 1rem;
   box-shadow: 0 1.5rem 2rem -1rem rgba(0, 0, 0, 0.7);
   padding: 1rem;
-  margin: auto 5rem;
+  margin: 3rem;
   position: relative;
 }
 
@@ -283,12 +273,13 @@ header {
 }
 
 .softSkills__aboutMe {
+  max-width: 45rem;
   min-height: 30rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   padding: 1rem;
-  margin: auto 5rem;
+  margin: auto;
 }
 
 .softSkills__aboutMe h2 {
@@ -303,21 +294,24 @@ header {
 }
 
 .softSkills__button button {
-  height: 3rem;
+  height: 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
   background: var(--secondary);
   border: none;
   border-radius: 0.5rem;
 }
 
 .softSkills__button a {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: bold;
   color: var(--primary);
-  padding: 0.7rem 1rem;
+  padding: 1rem;
+}
+
+.softSkills__button a span {
+  margin-right: 0.8rem;
 }
 
 .softSkills__button button:hover {
@@ -645,12 +639,18 @@ footer {
 
 /* 609px  */
 @media (max-width: 609px) {
-  .hardSkills__level span {
-    font-size: 1.4rem;
+  .softSkills__title h2,
+  .projects__title h2,
+  .hardSkills__title h2 {
+    font-size: 4rem;
   }
 
-  .hardSkills__title {
-    font-size: 2.8rem;
+  .softSkills__content {
+    padding: 5rem 1rem;
+  }
+
+  .hardSkills__level span {
+    font-size: 1.4rem;
   }
 }
 
@@ -662,6 +662,27 @@ footer {
 
   .projects__background {
     border-radius: 0;
+  }
+
+  #softSkills .container {
+    padding: 0 1.5rem;
+  }
+
+  .softSkills__content {
+    background: var(--primary);
+    border-radius: 1rem;
+    box-shadow: none;
+    margin: 5rem auto;
+  }
+
+  .softSkills__avatar,
+  .softSkills__aboutMe {
+    max-height: 45rem;
+    justify-content: center;
+    gap: 3rem;
+    margin: 0 auto;
+    background: var(--primary);
+    border-radius: 1rem;
   }
 
   .hardSkills__tecnology {
@@ -679,11 +700,17 @@ footer {
 }
 
 /* 939px */
-
 @media (max-width: 939px) {
+  .softSkills__aboutMe,
   .projects__title,
   .hardSkills__title {
     text-align: center;
+    align-items: center;
+  }
+
+  .softSkills__content {
+    flex-direction: column;
+    gap: 2rem;
   }
 }
 
