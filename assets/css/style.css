@@ -288,6 +288,10 @@ header {
   color: var(--title);
 }
 
+.softSkills__aboutMe p {
+  font-size: 1.8rem;
+}
+
 .softSkills__button {
   display: flex;
   justify-content: flex-end;
